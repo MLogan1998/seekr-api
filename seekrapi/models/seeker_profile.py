@@ -11,3 +11,4 @@ def SeekerProfile(models.Model):
     tech_ed = models.CharField()
     experience = models.IntegerField()
     work_history = models.CharField(blank=True)
+    languages = models.ManyToManyField("Languages", related_name="seeker_languages", related_query_name="seeker_language")
