@@ -1,4 +1,4 @@
 from django.db  import models
 
-def Languages(models.Model):
-    name = models.CharField()
+class Languages(models.Model):
+    name = models.CharField(max_length=25)

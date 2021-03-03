@@ -1,0 +1,22 @@
+[
+  {
+    "model": "seekrapi.jobposting",
+    "pk": 1,
+    "fields": {
+        "employer": 1,
+        "job_description": "Seeking a junior developer to be part of an agile development team building and working on enterprise grade software systems on top of the Microsoft .NET development stack.",
+        "salary": 40000,
+        "benefits": true
+    }
+  },
+  {
+    "model": "seekrapi.jobposting",
+    "pk": 2,
+    "fields": {
+      "employer": 1,
+      "job_description": "Seeking a junior developer to be part of an agile development team building and working on enterprise grade software systems on top of the Python/Django stack.",
+      "salary": 47000,
+      "benefits": true
+    }
+  }
+]

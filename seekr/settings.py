@@ -141,3 +141,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'seekrapi.User'
+
+USE_THOUSAND_SEPARATOR=True 
