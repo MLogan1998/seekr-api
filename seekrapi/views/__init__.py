@@ -5,4 +5,4 @@ from .job_posting import JobPostingViewSet
 from .seeker_action import SeekerActionViewSet
 from .seeker_profile import SeekerProfileViewSet
 from .match import MatchViewSet
-from .languages import LanguagesViewSet
+from .laguages import LanguagesViewSet
