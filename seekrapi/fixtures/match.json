@@ -1,0 +1,28 @@
+[
+  {
+    "model": "seekrapi.match",
+    "pk": 1,
+    "fields": {
+        "employer": true,
+        "job": 1
+    }
+  },
+  {
+    "model": "seekrapi.match",
+    "pk": 2,
+    "fields": {
+      "seeker": 2,
+      "employer": 1,
+      "job": 1
+    }
+  },
+  {
+    "model": "seekrapi.match",
+    "pk": 3,
+    "fields": {
+      "seeker": 1,
+      "employer": 1,
+      "job": 2
+    }
+  }
+]

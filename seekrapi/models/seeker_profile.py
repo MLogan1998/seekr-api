@@ -7,7 +7,7 @@ class SeekerProfile(models.Model):
     bio = models.TextField(max_length=350)
     profile_img = models.CharField(max_length=200)
     project_name = models.CharField(max_length=200)    
-    project_detail = models.TextField(max_length=300)
+    project_detail = models.TextField(max_length=400)
     project_img = models.CharField(max_length=200)
     github_username = models.CharField(max_length=200)
     tech_ed = models.CharField(max_length=200)
