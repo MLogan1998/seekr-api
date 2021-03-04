@@ -1,0 +1,29 @@
+[
+  {
+    "model": "seekrapi.seekeraction",
+    "pk": 1,
+    "fields": {
+        "seeker": 1,
+        "seeker_response": false,
+        "job": 1
+    }
+  },
+  {
+    "model": "seekrapi.seekeraction",
+    "pk": 2,
+    "fields": {
+      "seeker": 1,
+      "seeker_response": true,
+      "job": 2
+    }
+  },
+  {
+    "model": "seekrapi.seekeraction",
+    "pk": 3,
+    "fields": {
+      "seeker": 2,
+      "seeker_response": true,
+      "job": 1
+    }
+  }
+]

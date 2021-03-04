@@ -1,0 +1,78 @@
+[
+  {
+    "model": "seekrapi.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "matt@matt.com",
+        "first_name": "Matt",
+        "last_name": "Logan",
+        "email": "matt@matt.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-01T14:51:39.989Z",
+        "is_seeker": true,
+        "groups": [],
+        "user_permissions": []
+    }
+  },
+  {
+    "model": "seekrapi.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "nate@nate.com",
+        "first_name": "Nate",
+        "last_name": "Owens",
+        "email": "nate@nate.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-01T14:51:39.989Z",
+        "is_seeker": true,
+        "groups": [],
+        "user_permissions": []
+    }
+  },
+  {
+    "model": "seekrapi.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "luke@luke.com",
+        "first_name": "Luke",
+        "last_name": "Lancaster",
+        "email": "luke@luke.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-01T14:51:39.989Z",
+        "is_seeker": false,
+        "groups": [],
+        "user_permissions": []
+    }
+  },
+  {
+    "model": "seekrapi.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hannah@hannah.com",
+        "first_name": "Hannah",
+        "last_name": "Hall",
+        "email": "hannah@hannah.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-01T14:51:39.989Z",
+        "is_seeker": false,
+        "groups": [],
+        "user_permissions": []
+    }
+  }
+]

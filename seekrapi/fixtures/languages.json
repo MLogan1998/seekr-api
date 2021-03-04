@@ -1,0 +1,44 @@
+[
+  {
+    "model": "seekrapi.languages",
+    "pk": 1,
+    "fields": {
+        "name": "JavaScript"
+    }
+  },
+  {
+    "model": "seekrapi.languages",
+    "pk": 2,
+    "fields": {
+      "name": "HTML"
+    }
+  },
+  {
+    "model": "seekrapi.languages",
+    "pk": 3,
+    "fields": {
+      "name": "SCSS"
+    }
+  },
+  {
+    "model": "seekrapi.languages",
+    "pk": 4,
+    "fields": {
+      "name": "CSS"
+    }
+  },
+  {
+    "model": "seekrapi.languages",
+    "pk": 5,
+    "fields": {
+      "name": "Python"
+    }
+  },
+  {
+    "model": "seekrapi.languages",
+    "pk": 6,
+    "fields": {
+      "name": "Django"
+    }
+  }
+]
