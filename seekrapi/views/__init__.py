@@ -6,3 +6,5 @@ from .seeker_action import SeekerActionViewSet
 from .seeker_profile import SeekerProfileViewSet
 from .match import MatchViewSet
 from .laguages import LanguagesViewSet
+from .auth import register_user
+from .auth import login_user
