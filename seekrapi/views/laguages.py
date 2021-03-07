@@ -5,7 +5,7 @@ from rest_framework import serializers
 class LanguagesSerializer(serializers.ModelSerializer):
     class Meta: 
         model = Languages
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'icon')
         
 class LanguagesViewSet(viewsets.ModelViewSet):
     queryset = Languages.objects.all()
