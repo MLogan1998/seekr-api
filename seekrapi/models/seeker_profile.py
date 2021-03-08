@@ -1,9 +1,8 @@
 from django.db import models
-from django.conf import settings
 from django.db.models import CASCADE
 
 class SeekerProfile(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=CASCADE, default=1)
+    user = models.ForeignKey("User", related_name="profiles", related_query_name="profile", on_delete=CASCADE, default=1)
     bio = models.TextField(max_length=350)
     profile_img = models.CharField(max_length=200)
     project_name = models.CharField(max_length=200)    
