@@ -11,8 +11,6 @@
         "project_detail": "Not The Office is an app built for people addicted to The Office. Use the random movie generator to search for movies featuring your favorite characters from The Office. Built with React, TMDb API, Firebase, Axios, and SCSS.",
         "github_username": "MLogan1998",
         "tech_ed": "Nashville Software School",
-        "experience": 1,
-        "work_history": "Printing",
         "languages":[1,3,4]
     }
   },
@@ -28,8 +26,6 @@
         "project_detail": "Bozo University admin panel was a group project at NSS. The technologies used were Vanilla JS, CSS, Firebase, and SCSS. It is a full CRUD single page application.",
         "github_username": "nathanieltylerowens",
         "tech_ed": "Nashville Software School",
-        "experience": 1,
-        "work_history": "Printing",
         "languages":[2,5,6]
     }
   }
