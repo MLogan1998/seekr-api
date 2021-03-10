@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, filters
 from seekrapi.models import EmployerProfile
 from rest_framework import serializers
 
@@ -10,3 +10,4 @@ class EmployerProfileSerializer(serializers.ModelSerializer):
 class EmployerProfileViewSet(viewsets.ModelViewSet):
     queryset = EmployerProfile.objects.all()
     serializer_class = EmployerProfileSerializer
+    filter_fields = ('user','user__id')
