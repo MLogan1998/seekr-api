@@ -5,7 +5,7 @@ from rest_framework import serializers
 class JobPostingSerializer(serializers.ModelSerializer):
     class Meta: 
         model = JobPosting
-        fields = ('id', 'employer', 'job_description', 'salary', 'benefits')
+        fields = ('id', 'employer', 'job_description', 'salary', 'benefits', 'requirements', 'job_title')
         
 class JobPostingViewSet(viewsets.ModelViewSet):
     queryset = JobPosting.objects.all()

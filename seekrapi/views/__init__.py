@@ -8,3 +8,4 @@ from .match import MatchViewSet
 from .laguages import LanguagesViewSet
 from .auth import register_user
 from .auth import login_user
+from .user import UserViewSet

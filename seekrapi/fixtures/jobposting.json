@@ -5,8 +5,10 @@
     "fields": {
         "employer": 1,
         "job_description": "Seeking a junior developer to be part of an agile development team building and working on enterprise grade software systems on top of the Microsoft .NET development stack.",
-        "salary": 40000,
-        "benefits": true
+        "salary": "40,000",
+        "benefits": true,
+        "requirements": "Must have bachelors degree or certificate from a bootcamp. Must have knowledge of HTML, CSS, JS",
+        "job_title": "Junior Developer"
     }
   },
   {
@@ -15,8 +17,10 @@
     "fields": {
       "employer": 1,
       "job_description": "Seeking a junior developer to be part of an agile development team building and working on enterprise grade software systems on top of the Python/Django stack.",
-      "salary": 47000,
-      "benefits": true
+      "salary": "47,000",
+      "benefits": true,
+      "requirements": "Must have bachelors degree or certificate from a bootcamp. Must have knowledge of HTML, CSS, JS",
+      "job_title": "Junior Developer" 
     }
   }
 ]
