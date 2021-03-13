@@ -4,6 +4,7 @@
     "pk": 1,
     "fields": {
         "employer": 1,
+        "company": 1,
         "job_description": "Seeking a junior developer to be part of an agile development team building and working on enterprise grade software systems on top of the Microsoft .NET development stack.",
         "salary": "40,000",
         "benefits": true,
@@ -16,6 +17,7 @@
     "pk": 2,
     "fields": {
       "employer": 1,
+      "company": 1,
       "job_description": "Seeking a junior developer to be part of an agile development team building and working on enterprise grade software systems on top of the Python/Django stack.",
       "salary": "47,000",
       "benefits": true,
