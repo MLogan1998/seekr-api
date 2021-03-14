@@ -5,7 +5,7 @@ from rest_framework import serializers
 class EmployerActionSerializer(serializers.ModelSerializer):
     class Meta: 
         model = EmployerAction
-        fields = ('id', 'job', 'employer_response', 'seeker')
+        fields = ('id', 'employer', 'employer_response', 'seeker')
         
 class EmployerActionViewSet(viewsets.ModelViewSet):
     queryset = EmployerAction.objects.all()

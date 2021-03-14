@@ -1,8 +1,10 @@
 from rest_framework import viewsets
-from seekrapi.models import SeekerProfile, User
+from seekrapi.models import SeekerProfile, User, EmployerAction
 from rest_framework import serializers
 from rest_framework.response import Response
 from django.core.exceptions import ValidationError
+from django.db.models import Q
+
 
 class SeekerProfileSerializer(serializers.ModelSerializer):
     class Meta: 
@@ -40,3 +42,28 @@ class SeekerProfileViewSet(viewsets.ModelViewSet):
             return Response(serializer.data)
         except ValidationError as ex:
             return Response({'reason': ex.message}, status=status.HTTP_400_BAD_REQUEST)
+
+
+    def get_queryset(self):
+        employer_id = self.request.query_params.get('employer', None)
+
+        if employer_id is not None:
+            filterset = SeekerProfile.objects.extra(where=['''
+                id IN
+                (
+                SELECT seekrapi_seekerprofile.id
+                FROM  seekrapi_seekerprofile
+                LEFT JOIN seekrapi_employeraction
+                ON seekrapi_seekerprofile.id = seekrapi_employeraction.seeker_id
+                WHERE seekrapi_seekerprofile.id NOT IN 
+                (
+                    SELECT seeker_id
+                    FROM seekrapi_employeraction
+                    WHERE employer_id IS %s
+                )
+                GROUP BY seeker_id
+                )
+            '''], params=[employer_id])
+            return filterset
+        else:
+            return self.queryset
