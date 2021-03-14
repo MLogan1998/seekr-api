@@ -39,3 +39,27 @@ class JobPostingViewSet(viewsets.ModelViewSet):
             return Response(serializer.data)
         except ValidationError as ex:
             return Response({'reason': ex.message}, status=status.HTTP_400_BAD_REQUEST)
+
+    def get_queryset(self):
+        seeker_id = self.request.query_params.get('seeker', None)
+
+        if seeker_id is not None:
+            filterset = JobPosting.objects.extra(where=['''
+                id IN
+                (
+                SELECT seekrapi_jobposting.id
+                FROM  seekrapi_jobposting
+                LEFT JOIN seekrapi_seekeraction
+                ON seekrapi_jobposting.id = seekrapi_seekeraction.job_id
+                WHERE seekrapi_jobposting.id NOT IN 
+                (
+                    SELECT job_id
+                    FROM seekrapi_seekeraction
+                    WHERE seeker_id IS %s
+                )
+                GROUP BY job_id
+                )
+            '''], params=[seeker_id])
+            return filterset
+        else:
+            return self.queryset

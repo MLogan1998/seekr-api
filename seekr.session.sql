@@ -1,9 +1,9 @@
 -- SELECT * from seekrapi_employeraction
 
 
-SELECT seeker_id
+SELECT seekrapi_seekerprofile.id
 FROM  seekrapi_seekerprofile
-JOIN seekrapi_employeraction
+LEFT JOIN seekrapi_employeraction
 ON seekrapi_seekerprofile.id = seekrapi_employeraction.seeker_id
 WHERE seekrapi_seekerprofile.id NOT IN 
   (

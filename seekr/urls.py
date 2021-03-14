@@ -3,11 +3,12 @@ from django.urls import path
 from rest_framework import routers
 from django.urls import path
 from django.conf.urls import include
-from seekrapi.views import register_user, login_user, SeekerProfileViewSet, LanguagesViewSet, SeekerProfileViewSet, EmployerProfileViewSet, UserViewSet, CompanyProfileViewSet, JobPostingViewSet, EmployerActionViewSet
+from seekrapi.views import register_user, login_user, SeekerProfileViewSet, LanguagesViewSet, SeekerProfileViewSet, EmployerProfileViewSet, UserViewSet, CompanyProfileViewSet, JobPostingViewSet, EmployerActionViewSet, SeekerActionViewSet
 
 
 router = routers.DefaultRouter(trailing_slash=False)
-router.register(r'employeraction', EmployerActionViewSet, 'seekr')
+router.register(r'seekeraction', SeekerActionViewSet, 'seekeraction')
+router.register(r'employeraction', EmployerActionViewSet, 'employeraction')
 router.register(r'seekrs', SeekerProfileViewSet, 'seekr')
 router.register(r'languages', LanguagesViewSet, 'language')
 router.register(r'profile', SeekerProfileViewSet, 'profile')

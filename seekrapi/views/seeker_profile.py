@@ -1,10 +1,8 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, filters
 from seekrapi.models import SeekerProfile, User, EmployerAction
 from rest_framework import serializers
 from rest_framework.response import Response
 from django.core.exceptions import ValidationError
-from django.db.models import Q
-
 
 class SeekerProfileSerializer(serializers.ModelSerializer):
     class Meta: 
@@ -21,6 +19,7 @@ class SeekerProfileCreateSerializer(serializers.ModelSerializer):
 class SeekerProfileViewSet(viewsets.ModelViewSet):
     queryset = SeekerProfile.objects.all()
     serializer_class = SeekerProfileSerializer
+    filter_fields = ('user','user__id')
 
     def create (self, request):
         seekr = User.objects.get(pk=request.data['user'])
