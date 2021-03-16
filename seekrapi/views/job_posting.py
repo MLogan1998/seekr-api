@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, filters
 from seekrapi.models import JobPosting, EmployerProfile, CompanyProfile
 from rest_framework import serializers
 from rest_framework.response import Response
@@ -8,7 +8,6 @@ class JobPostingSerializer(serializers.ModelSerializer):
     class Meta: 
         model = JobPosting
         fields = ('id', 'employer', 'company', 'job_description', 'salary', 'benefits', 'requirements', 'job_title')
-        
         depth = 2
 
 class JobPostingCreateSerializer(serializers.ModelSerializer):
@@ -19,6 +18,7 @@ class JobPostingCreateSerializer(serializers.ModelSerializer):
 class JobPostingViewSet(viewsets.ModelViewSet):
     queryset = JobPosting.objects.all()
     serializer_class = JobPostingSerializer
+    filter_fields = ('employer', 'employer__id')
 
 
     def create (self, request):
