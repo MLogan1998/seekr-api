@@ -4,6 +4,8 @@ from rest_framework.decorators import action
 from rest_framework import serializers
 from rest_framework.response import Response
 from django.core.exceptions import ValidationError
+from django.http import HttpResponse
+import json
 
 class MatchSerializer(serializers.ModelSerializer):
     class Meta: 
@@ -30,7 +32,8 @@ class MatchViewSet(viewsets.ModelViewSet):
             try:
                 obj.save()
                 serializer = MatchSerializer(obj, context={'request': request})
-                return Response(serializer.data)
+                data = json.dumps({"created": created})
+                return HttpResponse(data, content_type='application/json')
             except ValidationError as ex:
                 return Response({'reason': ex.message}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -50,6 +53,7 @@ class MatchViewSet(viewsets.ModelViewSet):
             try:
                 obj.save()
                 serializer = MatchSerializer(obj, context={'request': request})
-                return Response(serializer.data)
+                data = json.dumps({"created": created})
+                return HttpResponse(data, content_type='application/json')
             except ValidationError as ex:
                 return Response({'reason': ex.message}, status=status.HTTP_400_BAD_REQUEST)
