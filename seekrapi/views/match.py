@@ -63,6 +63,7 @@ class MatchViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         seeker = self.request.query_params.get('seeker', None)
+        employer = self.request.query_params.get('employer', None)
 
         if seeker is not None:  
             filterset = Match.objects.filter(
@@ -72,6 +73,15 @@ class MatchViewSet(viewsets.ModelViewSet):
             )
 
             return filterset
-        
+
+        elif employer is not None:  
+            filterset = Match.objects.filter(
+                Q(employer_id = employer) &
+                Q(employer_response = True) &
+                Q(seeker_response = True)
+            )
+
+            return filterset
+
         else:
             return self.queryset
