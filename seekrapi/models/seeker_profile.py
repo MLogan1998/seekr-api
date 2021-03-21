@@ -8,6 +8,7 @@ class SeekerProfile(models.Model):
     project_name = models.CharField(max_length=200)    
     project_detail = models.TextField(max_length=400)
     project_img = models.TextField()
+    project_url = models.CharField(max_length=200)
     github_username = models.CharField(max_length=200)
     tech_ed = models.CharField(max_length=200)
     languages = models.ManyToManyField("Languages", related_name="seeker_languages", related_query_name="seeker_language")

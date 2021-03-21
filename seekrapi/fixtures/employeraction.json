@@ -5,7 +5,8 @@
     "fields": {
         "employer": 1,
         "employer_response": true,
-        "seeker": 1
+        "seeker": 1,
+        "job": 1
     }
   },
   {
@@ -14,7 +15,8 @@
     "fields": {
       "employer": 1,
       "employer_response": true,
-      "seeker": 1
+      "seeker": 2,
+      "job": 1
     }
   },
   {
@@ -23,7 +25,18 @@
     "fields": {
       "employer": 1,
       "employer_response": true,
-      "seeker": 2
+      "seeker": 3,
+      "job": 1
+    }
+  },
+  {
+    "model": "seekrapi.employeraction",
+    "pk": 4,
+    "fields": {
+      "employer": 1,
+      "employer_response": true,
+      "seeker": 4,
+      "job": 1
     }
   }
 ]

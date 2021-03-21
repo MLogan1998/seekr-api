@@ -7,13 +7,13 @@ from django.core.exceptions import ValidationError
 class SeekerProfileSerializer(serializers.ModelSerializer):
     class Meta: 
         model = SeekerProfile
-        fields = ('id', 'user', 'profile_img', 'project_name', 'project_detail', 'project_img', 'bio', 'github_username', 'tech_ed', 'languages')
+        fields = ('id', 'user', 'profile_img', 'project_name', 'project_detail', 'project_img', 'project_url', 'bio', 'github_username', 'tech_ed', 'languages')
         depth = 2
 
 class SeekerProfileCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = SeekerProfile
-        fields = ('id', 'user', 'profile_img', 'project_name', 'project_detail', 'project_img', 'bio', 'github_username', 'tech_ed', 'languages')
+        fields = ('id', 'user', 'profile_img', 'project_name', 'project_detail', 'project_img', 'project_url', 'bio', 'github_username', 'tech_ed', 'languages')
 
 
 class SeekerProfileViewSet(viewsets.ModelViewSet):
@@ -29,6 +29,7 @@ class SeekerProfileViewSet(viewsets.ModelViewSet):
         profile.project_name = request.data['project_name']
         profile.project_detail = request.data['project_detail']
         profile.project_img = request.data['project_img']
+        profile.project_url = request.data['project_url']
         profile.bio = request.data['bio']
         profile.github_username = request.data['github_username']
         profile.tech_ed = request.data['tech_ed']

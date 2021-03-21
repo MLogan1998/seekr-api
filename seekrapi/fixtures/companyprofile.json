@@ -8,15 +8,5 @@
         "company_bio": "A really great place to work. You really want to get a job here.",
         "company_logo": "https://www.livehappy.com/sites/default/files/styles/article_featured/public/main/articles/Happy-office-workers-sized.jpg?itok=px5T1Sk0"
     }
-  },
-  {
-    "model": "seekrapi.companyprofile",
-    "pk": 2,
-    "fields": {
-        "employer_profile": 2,
-        "company_name": "Hannah's Workplace",
-        "company_bio": "The best place of all time. If you are hired here you are the best.",
-        "company_logo": "https://www.globalsolidaritygroup.org/wp-content/uploads/2019/07/images2546-5d2e3949b0b40-1024x683.jpg"
-    }
   }
 ]
