@@ -4,14 +4,15 @@
     "pk": 1,
     "fields": {
         "user": 1,
-        "bio": "I love coding because I love solving problems. I also enjoy working with a team to accomplish great things!",
-        "profile_img": "https://media.bitdegree.org/storage/media/images/2018/08/what-is-a-web-developer.jpg",
-        "project_name": "Not The Office Again",
-        "project_img": "https://i.imgur.com/OlhvzRA.jpg",
-        "project_detail": "Not The Office is an app built for people addicted to The Office. Use the random movie generator to search for movies featuring your favorite characters from The Office. Built with React, TMDb API, Firebase, Axios, and SCSS.",
-        "github_username": "MLogan1998",
+        "bio": "Web development is a field where I can put my love for problem-solving, collaboration, and logic to good use. I have high standards for myself and my work, and I'm excited to continue learning and improving upon my code.",
+        "profile_img": "https://i.imgur.com/CyDFztQ.jpg",
+        "project_name": "Knit Picker",
+        "project_img": "https://i.imgur.com/MxaEuDv.jpg",
+        "project_url": "https://knit-picker.web.app/",
+        "project_detail": "Single-page application built with React that allows the user to organize their personal knitting supplies, patterns, and knitting projects as well as upload photos of finished projects to a gallery.",
+        "github_username": "jeaninebeckle",
         "tech_ed": "Nashville Software School",
-        "languages":[1,3,4]
+        "languages":[1,2,3,4,5]
     }
   },
   {
@@ -19,14 +20,47 @@
     "pk": 2,
     "fields": {
         "user": 2,
-        "bio": "Coding is amazing. So much fun. This is a test bio for seed data. Please enjoy.",
-        "profile_img": "https://usersnap.com/blog/wp-content/uploads/2017/04/college-study-web-development-2.png",
-        "project_name": "Bozo University",
-        "project_img": "https://i.imgur.com/dajJQW0.jpgg",
-        "project_detail": "Bozo University admin panel was a group project at NSS. The technologies used were Vanilla JS, CSS, Firebase, and SCSS. It is a full CRUD single page application.",
-        "github_username": "nathanieltylerowens",
+        "bio": "I built a portfolio site and that was the moment I realized I really enjoy and thrive in web design and development. From that point on I dedicated my time to learning new skills.",
+        "profile_img": "https://i.imgur.com/gARrwOc.jpg",
+        "project_name": "Hold My Color",
+        "project_img": "https://i.imgur.com/8k14vSn.jpg",
+        "project_url": "https://holdmycolor.com/",
+        "project_detail": "Hold My Color is a web app where a user not only builds their color palette for their next project, but can download it in a SASS file or create their style guide as a GitHub Issue.",
+        "github_username": "RyanBeiden",
         "tech_ed": "Nashville Software School",
-        "languages":[2,5,6]
+        "languages":[1,2,3,4,5]
+    }
+  },
+  {
+    "model": "seekrapi.seekerprofile",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "bio": "I love to make cool things that make life easier for me and everyone else. Things that get business done and make productivity soar. I speak fluent web stack, including HTML, JavaScript, CSS, Bootstrap, React and Python",
+        "profile_img": "https://i.imgur.com/i8G0Qnl.jpg",
+        "project_name": "Pocket Piggy",
+        "project_img": "https://i.imgur.com/rIVh8h6.jpg",
+        "project_url": "https://pp-demo-frame.web.app/",
+        "project_detail": "A mobile app that lets parents and kids manage money together. Parents can add funds and chores to kid accounts. Kids can accept chores to earn money and buy items on their wish list with parents approval.",
+        "github_username": "jshearon",
+        "tech_ed": "Nashville Software School",
+        "languages":[1,2,3,4,5]
+    }
+  },
+  {
+    "model": "seekrapi.seekerprofile",
+    "pk": 4,
+    "fields": {
+        "user": 4,
+        "bio": "Since I was a child I had a passion for technology. The first computer I had was Sinclair ZX81. That's where I started my journey on technology and my passion to learn. When I was 13 the first language I did was BASIC.",
+        "profile_img": "https://i.imgur.com/xwc5cpg.jpg",
+        "project_name": "Sports Club",
+        "project_img": "https://i.imgur.com/x8pRqCJ.jpg",
+        "project_url": "https://sports-roster-4f7f3.web.app/",
+        "project_detail": "You will be able to track your player from the MANCHESTER UNITED TEAM, and you also Add Delete and Update them. This app was built with HTML, JavaScript, React, SCSS.",
+        "github_username": "Kamiran79",
+        "tech_ed": "Nashville Software School",
+        "languages":[1,2,3,4,5]
     }
   }
 ]

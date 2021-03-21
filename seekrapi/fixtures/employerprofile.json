@@ -3,16 +3,8 @@
     "model": "seekrapi.employerprofile",
     "pk": 1,
     "fields": {
-        "user": 3,
+        "user": 5,
         "profile_img": "https://d12cg73w02lqn7.cloudfront.net/wp-content/uploads/2016/07/happy-workplace.jpg"
-    }
-  },
-  {
-    "model": "seekrapi.employerprofile",
-    "pk": 2,
-    "fields": {
-        "user": 4,
-        "profile_img": "https://images.theconversation.com/files/221178/original/file-20180531-69481-6b8yyp.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
     }
   }
 ]
