@@ -1,4 +1,4 @@
--- SELECT * from seekrapi_employeraction
+-- SELECT * from seekrapi_seekerprofile
 
 
 SELECT seekrapi_seekerprofile.id
@@ -7,8 +7,8 @@ LEFT JOIN seekrapi_employeraction
 ON seekrapi_seekerprofile.id = seekrapi_employeraction.seeker_id
 WHERE seekrapi_seekerprofile.id NOT IN 
   (
-    SELECT seeker_id
+    SELECT seekrapi_employeraction.seeker_id
     FROM seekrapi_employeraction
-    WHERE employer_id IS 11
+    WHERE employer_id IS 1
   )
-GROUP BY seeker_id
+SELECT DISTINCT seeker_id

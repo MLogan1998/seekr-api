@@ -57,11 +57,10 @@ class SeekerProfileViewSet(viewsets.ModelViewSet):
                 ON seekrapi_seekerprofile.id = seekrapi_employeraction.seeker_id
                 WHERE seekrapi_seekerprofile.id NOT IN 
                 (
-                    SELECT seeker_id
+                    SELECT DISTINCT seeker_id
                     FROM seekrapi_employeraction
                     WHERE employer_id IS %s
                 )
-                GROUP BY seeker_id
                 )
             '''], params=[employer_id])
             return filterset

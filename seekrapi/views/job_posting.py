@@ -53,11 +53,10 @@ class JobPostingViewSet(viewsets.ModelViewSet):
                 ON seekrapi_jobposting.id = seekrapi_seekeraction.job_id
                 WHERE seekrapi_jobposting.id NOT IN 
                 (
-                    SELECT job_id
+                    SELECT DISTINCT job_id
                     FROM seekrapi_seekeraction
                     WHERE seeker_id IS %s
                 )
-                GROUP BY job_id
                 )
             '''], params=[seeker_id])
             return filterset
