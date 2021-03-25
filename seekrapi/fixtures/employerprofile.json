@@ -4,7 +4,15 @@
     "pk": 1,
     "fields": {
         "user": 5,
-        "profile_img": "https://d12cg73w02lqn7.cloudfront.net/wp-content/uploads/2016/07/happy-workplace.jpg"
+        "profile_img": "https://i.imgur.com/F601KEp.jpg"
+    }
+  },
+  {
+    "model": "seekrapi.employerprofile",
+    "pk": 2,
+    "fields": {
+        "user": 6,
+        "profile_img": "https://i.imgur.com/eNzopDY.jpg"
     }
   }
 ]

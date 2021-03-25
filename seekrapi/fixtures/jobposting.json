@@ -11,5 +11,18 @@
         "requirements": "Must have bachelors degree or certificate from a bootcamp. Must have knowledge of HTML, CSS, JS",
         "job_title": "Junior Developer"
     }
+  },
+  {
+    "model": "seekrapi.jobposting",
+    "pk": 1,
+    "fields": {
+        "employer": 2,
+        "company": 2,
+        "job_description": "Create, code, and improve the server, server-side applications, and databases that, when combined with front-end codes, help create a functional, seamless experience for the end-user.",
+        "salary": "40,000",
+        "benefits": true,
+        "requirements": "Must have bachelors degree or certificate from a bootcamp. Must have knowledge of HTML, CSS, JS",
+        "job_title": "Junior Back-End Developer"
+    }
   }
 ]

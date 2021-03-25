@@ -74,5 +74,43 @@
         "groups": [],
         "user_permissions": []
     }
+  },
+  {
+    "model": "seekrapi.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "evicore@evicore.com",
+        "first_name": "eviCore",
+        "last_name": "Employer",
+        "email": "evicore@evicore.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-01T14:51:39.989Z",
+        "is_seeker": false,
+        "groups": [],
+        "user_permissions": []
+    }
+  },
+  {
+    "model": "seekrapi.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hca@hca.com",
+        "first_name": "HCA",
+        "last_name": "Employer",
+        "email": "hca@hca.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-01T14:51:39.989Z",
+        "is_seeker": false,
+        "groups": [],
+        "user_permissions": []
+    }
   }
 ]

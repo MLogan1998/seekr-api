@@ -4,9 +4,19 @@
     "pk": 1,
     "fields": {
         "employer_profile": 1,
-        "company_name": "Luke's Workplace",
-        "company_bio": "A really great place to work. You really want to get a job here.",
-        "company_logo": "https://www.livehappy.com/sites/default/files/styles/article_featured/public/main/articles/Happy-office-workers-sized.jpg?itok=px5T1Sk0"
+        "company_name": "eviCore",
+        "company_bio": "eviCore is a company committed to advancing healthcare management through intelligent care – and enabling better outcomes for patientsand providers. We help strengthen the patients/provider relationship.",
+        "company_logo": "https://i.imgur.com/Bts7igr.jpg"
+    }
+  },
+  {
+    "model": "seekrapi.companyprofile",
+    "pk": 2,
+    "fields": {
+        "employer_profile": 2,
+        "company_name": "HCA Healthcare",
+        "company_bio":  "HCA Healthcare is an American for-profit operator of health care facilities. It is based in Nashville, Tennessee, and, as of May 2020, owns and operates 186 hospitals and approximately 2,000 sites of care.",
+        "company_logo": "https://i.imgur.com/RvjXGY9.jpg"
     }
   }
 ]
